@@ -1,0 +1,28 @@
+# ~/.tmuxinator/git.yml
+
+name: git
+root: ~/Documents/Skills/Git/
+
+
+# Source custom .tmux.conf.
+tmux_options: -f $TMUX_CONFIG
+
+
+# Use the Editor window and pane 1 on startup.
+startup_window: Notes
+startup_pane: 1
+
+
+
+windows:
+  - Notes:
+      layout: even-horizontal
+      panes:
+        - clear Enter
+        - vim ~/Documents/Notes/git.notes
+
+  - Terminals:
+      layout: even-horizontal
+      panes:
+        - clear Enter
+        - clear Enter

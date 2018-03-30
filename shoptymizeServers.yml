@@ -1,0 +1,28 @@
+# ~/.tmuxinator/shoptymizeServers.yml
+
+name: shoptymizeServers
+root: ~/Projects/Shoptymize/SeoTool/
+
+
+# Source custom .tmux.conf.
+tmux_options: -f $TMUX_CONFIG
+
+
+# Use the Editor window and pane 1 on startup.
+startup_window: Editor
+startup_pane: 1
+
+
+
+windows:
+  - Servers:
+      layout: even-horizontal
+      panes:
+        - cd client && yarn dev && Enter
+        - cd backend && workon ShoptymizeAPI && python manage.py runserver
+
+  - Server terminals:
+      layout: even-horizontal
+      panes:
+        - clear Enter
+        - clear Enter

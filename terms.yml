@@ -1,0 +1,31 @@
+# ~/.tmuxinator/terms.yml
+
+name: terms
+
+# Source custom .tmux.conf.
+tmux_options: -f $TMUX_CONFIG
+
+
+# Use the Editor window and pane on startup.
+startup_window: Editor
+startup_pane: 1
+
+
+
+windows:
+  - Term3:
+      layout: even-horizontal
+      panes:
+        - clear Enter
+
+  - Term2:
+      layout: even-horizontal
+      panes:
+        - clear Enter
+        - clear Enter
+
+  - Term1:
+      layout: even-horizontal
+      panes:
+        - clear Enter
+        - clear Enter

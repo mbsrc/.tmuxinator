@@ -1,0 +1,26 @@
+# ~/.tmuxinator/ethereum.yml
+
+name: ethereum
+root: ~/Documents/Skills/Ethereum/
+
+
+# Source custom .tmux.conf.
+tmux_options: -f $TMUX_CONFIG
+
+
+# Use the Editor window and pane 1 on startup.
+startup_window: Editor
+startup_pane: 1
+
+
+
+windows:
+  - Editor:
+      layout: even-horizontal
+      panes:
+        - vim
+
+  - Notes:
+      layout: even-horizontal
+      panes:
+        - vim ~/Documents/Notes/ethereum.notes

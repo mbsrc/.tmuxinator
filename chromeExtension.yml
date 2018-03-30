@@ -1,0 +1,25 @@
+# ~/.tmuxinator/shoptymizeClient.yml
+
+name: shoptymizeClient
+root: ~/Projects/Shoptymize/ChromeExt/ReactChromeExtension
+
+# Source custom .tmux.conf.
+tmux_options: -f $TMUX_CONFIG
+
+windows:
+
+    - Server:
+        layout: even-horizontal
+        panes:
+            - clear Enter
+
+    - Editor:
+        layout: even-horizontal
+        panes:
+            - cd src && nvim
+
+    - Terminals:
+        layout: even-horizontal
+        panes:
+            - clear Enter
+            - clear Enter

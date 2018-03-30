@@ -1,0 +1,30 @@
+# ~/.tmuxinator/stellar.yml
+
+name: stellar
+root: ~/Documents/Skills/Stellar/
+
+
+# Source custom .tmux.conf.
+tmux_options: -f $TMUX_CONFIG
+
+
+# Use the Editor window and pane on startup.
+startup_window: Editor
+startup_pane: 1
+
+
+
+windows:
+  - Editor:
+      layout: even-horizontal
+      panes:
+        -
+  - Terminals:
+      layout: even-horizontal
+      panes:
+        -
+        -
+  - Notes:
+      layout: even-horizontal
+      panes:
+        - vim ~/Documents/Notes/stellar.notes

@@ -1,0 +1,32 @@
+# ~/.tmuxinator/express.yml
+
+name: express
+root: ~/Documents/Skills/Express/
+
+
+# Source custom .tmux.conf.
+tmux_options: -f $TMUX_CONFIG
+
+
+# Use the Editor window and pane 1 on startup.
+startup_window: Editor
+startup_pane: 1
+
+
+
+windows:
+  - Editor:
+      layout: even-horizontal
+      panes:
+        - clear Enter
+
+  - Terminals:
+      layout: even-horizontal
+      panes:
+        - clear Enter
+        - clear Enter
+
+  - Notes:
+      layout: even-horizontal
+      panes:
+        - vim ~/Documents/Notes/express.notes

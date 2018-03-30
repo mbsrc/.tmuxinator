@@ -1,0 +1,32 @@
+# ~/.tmuxinator/node.yml
+
+name: node
+root: ~/Documents/Skills/Node/
+
+
+# Source custom .tmux.conf.
+tmux_options: -f $TMUX_CONFIG
+
+
+# Use the Editor window and pane 1 on startup.
+startup_window: Editor
+startup_pane: 1
+
+
+
+windows:
+  - Editor:
+      layout: even-horizontal
+      panes:
+        - vim
+
+  - Terminals:
+      layout: even-horizontal
+      panes:
+        - clear Enter
+        - clear Enter
+
+  - Notes:
+      layout: even-horizontal
+      panes:
+        - vim ~/Documents/Notes/Node.notes
