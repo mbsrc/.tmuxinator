@@ -18,7 +18,7 @@ windows:
   - Shell:
       layout: even-horizontal
       panes:
-        - ./dbConnect
+        - ./connectDB
 
   - Notes:
       layout: even-horizontal
