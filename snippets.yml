@@ -1,0 +1,33 @@
+# ~/.tmuxinator/snippets.yml
+
+name: snippets
+root: ~/.config/myCoolSnippets/
+
+
+# Source custom .tmux.conf.
+tmux_options: -f $TMUX_CONFIG
+
+
+# Use the Editor window and pane 1 on startup.
+startup_window: Editor
+startup_pane: 1
+
+
+
+windows:
+  - Editor:
+      layout: even-horizontal
+      panes:
+        - vim
+
+  - Python Modules:
+      layout: even-horizontal
+      panes:
+        - vim
+        - ipython3
+
+  - Terminals:
+      layout: even-horizontal
+      panes:
+        - clear Enter
+        - clear Enter
