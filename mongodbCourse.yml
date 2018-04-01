@@ -1,7 +1,7 @@
 # ~/.tmuxinator/mongodbCourse.yml
 
 name: mongodbAggregationCourse
-root: ~/Documents/Skills/MongoDB/MongoUniversity/Aggregation_Framework
+root: ~/Documents/Skills/MongoDB/MongoUniversity/Aggregation/
 
 
 # Source tmux.conf.
